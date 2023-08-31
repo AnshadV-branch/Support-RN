@@ -253,6 +253,8 @@ function App(): JSX.Element {
     
     setData(url)
 
+    console.log("generate url: ", url)
+
     Clipboard.setString(url)
     Snackbar.show({
       text: 'Generated link copied to clipboard!',
